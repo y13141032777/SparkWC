@@ -21,26 +21,20 @@ object flower {
         val d = line(3)
         val e = line(4)
 
-//        (a, b, c, d, e)
-        (a, b)
+        (a, b, c, d, e)//改一行
+//        (a, b)
       }
     )
 
-    rdd1.reduceByKey()
-    val tests: Array[(Double, Double, Double, Double)] = rdd1.map(x => {
-      (x._1.toDouble, x._2.toDouble, x._3.toDouble, x._4.toDouble)
-    }).collect()
+    println("添加一行")
+//    rdd1.reduceByKey()
+//    val tests: Array[(Double, Double, Double, Double)] = rdd1.map(x => {
+//      (x._1.toDouble, x._2.toDouble, x._3.toDouble, x._4.toDouble)
+//    }).collect()
 
 
-    rdd1.map(
-      y=>{
 
-        for(x <- tests){
-
-        }
-      }
-    )
-
+  //删了好几行
 
 
 
